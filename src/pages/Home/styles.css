@@ -1,0 +1,147 @@
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header img {
+  margin-right: 280px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-right: 42px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #e5e5e5;
+  padding: 0 15px;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: 700;
+}
+
+nav ul li a:hover {
+  background-color: #d72323;
+  transition: .3s all ease-in;
+  margin-top: 1px;
+}
+
+main {
+  display: flex;
+  height: calc(100vh - 100px);
+  align-items: center;
+  justify-content: center;
+}
+
+main .section-left {
+  width: 35%;
+  margin-right: 5%;
+}
+
+main .section-left h1 {
+  font-size: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+main .section-left p {
+  font-size: 17px;
+  text-align: justify;
+}
+
+main .section-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color:#d72323;
+  height: calc(100vh - 350px);
+  width: 35%;
+  margin-left: 5%;
+  border-radius: 20px;
+}
+
+main .section-right p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main .section-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+main .section-right input:first-child {
+  margin-top: -25px;
+}
+
+main .section-right input {
+  width: 80%;
+  height: 40px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 0 5px;
+  outline: 0;
+  align-self: center;
+  background-color: #e5e5e5;
+}
+
+main .section-right button {
+  width: 40%;
+  padding: 15px;
+  align-self: center;
+  background-color: #e5e5e5;
+  border: 0;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+main .section-right button:hover {
+  cursor: pointer;
+  background-color: #999;
+  transition: .3s all ease-in;
+  color: #e5e5e5;
+}
+
+/* responsividade */
+@media(max-width: 850px) {
+  header {
+    display: none;
+  }
+
+  main {
+    flex-direction: column;
+    height: 60%;
+  }
+
+  main .section-right {
+    margin: 20px 30px 0 0;
+  }
+
+  main .section-right p {
+    font-size: 12px;
+  }
+
+  main .section-right input {
+    height: 30px;
+    width: 95%;
+    border-radius: 0;
+    font-size: 13px;
+  }
+
+  main .section-right button {
+    width: 95%;
+  }
+}
+
