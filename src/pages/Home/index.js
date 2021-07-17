@@ -72,10 +72,6 @@ export default function Home() {
           </form>
         </section>
       </main>
-
-      <section>
-        Comprar
-      </section>
     </>
   );
 }
